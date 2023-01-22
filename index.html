@@ -93,6 +93,39 @@
     </section>
     </div>
     </main>
+    
+    <script>
+
+        const plus_btn = document.querySelectorAll('.controls .increase');
+        const minus_btn = document.querySelectorAll('.controls .decrease');
+
+
+        plus_btn.forEach(btn => btn.addEventListener('click', increase_product_count));
+        minus_btn.forEach(btn => btn.addEventListener('click', decrease_product_count));
+
+        function increase_product_count(event) {
+            let count_input = event.target.closest('.change-count').querySelector('input.selected-count');
+            let closest_availability = event.target.closest('.product').querySelector('.availability');
+
+            if (closest_availability.innerText == 0) return;
+
+            let increased_count = parseInt(count_input.value) + 1;
+            count_input.value = increased_count;
+
+            decrease_product_availability(event.target);
+        }
+
+        function decrease_product_count(event) {
+            let count_input = event.target.closest('.change-count').querySelector('input.selected-count');
+
+            if (parseInt(count_input.value) <= 1) return;
+
+            let decreased_count = parseInt(count_input.value) - 1
+            count_input.value = decreased_count;
+            increase_product_availability(event.target);
+
+        }
+    </script>
 </body>
 
 </html>

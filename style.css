@@ -1,0 +1,15 @@
+@charset "UTF-8";
+* {
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: vazir;
+}
+
+body main {
+  padding: 10px 4vw;
+}

@@ -243,7 +243,7 @@ body main {
       font-size: 15px;
     }
   }
-  
+
   .products-main-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -509,3 +509,76 @@ body main {
               flex-grow: 1 !important;
     }
   }
+
+  .seller-title {
+    color: #232323;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .seller-form {
+    width: 100%;
+    margin: 45px 0;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 12px;
+  }
+  
+  .seller-form input,
+  .seller-form textarea {
+    display: block;
+    border: 1px solid #232323c5;
+    width: 70%;
+    min-width: 240px;
+    padding: 4px 10px;
+    height: 43px;
+    border-radius: 4px;
+    margin: 10px 0 22px;
+    font-family: inherit;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  }
+  
+  .seller-form input[type=file] {
+    display: none;
+  }
+  
+  .seller-form textarea {
+    min-height: 140px;
+  }
+  
+  .seller-form .form-btn {
+    border-radius: 5px;
+    background: #06D6A0;
+    padding: 7px 10px;
+    margin: 10px 0 20px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    font-family: inherit;
+    font-size: 15px;
+  }
+  
+  .seller-form .form-btn:hover {
+    background-color: #049a73;
+  }
+  
+  .seller-form .image img {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 180px;
+    height: 130px;
+       object-fit: cover;
+    border: 2px solid #e2e2e2;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .seller-form input,
+    .seller-form textarea {
+      width: 100%;
+    }
+  }
+  
